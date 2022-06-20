@@ -14,7 +14,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 # %% Import dataset
 dataset = pd.read_csv(
-    'C:/Users/allen/Google Drive/School/UC/Semester 5/Pattern Recognition and Machine Learning/Semester Project/fer2013.csv')
+    'C:/Users/Maddie/Google Drive/School/UC/Semester 5/Pattern Recognition and Machine Learning/Semester Project/fer2013.csv')
 # Processing image data to arrays
 img_array = dataset.pixels.apply(lambda x: np.array(
     x.split(' ')).reshape(48, 48, 1).astype('float32'))
